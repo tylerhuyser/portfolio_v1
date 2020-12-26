@@ -28,7 +28,7 @@ const SkipToContentLink = styled.a`
     outline: 0;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
-    color: var(--green);
+    color: var(--orange);
     font-family: var(--font-mono);
     font-size: var(--fz-sm);
     line-height: 1;

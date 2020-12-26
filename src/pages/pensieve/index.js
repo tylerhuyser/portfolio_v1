@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
-import { IconZap } from '@components/icons';
 
 const StyledMainContainer = styled.main`
   & > header {
@@ -76,7 +75,7 @@ const StyledPostHeader = styled.div`
   margin-bottom: 30px;
 `;
 const StyledFolder = styled.div`
-  color: var(--green);
+  color: var(--orange);
   svg {
     width: 40px;
     height: 40px;
@@ -106,7 +105,7 @@ const StyledTags = styled.ul`
   list-style: none;
 
   li {
-    color: var(--green);
+    color: var(--orange);
     font-family: var(--font-mono);
     font-size: var(--fz-xxs);
     line-height: 1.75;
@@ -148,9 +147,7 @@ const PensievePage = ({ location, data }) => {
                       <header>
                         <Link to={slug}>
                           <StyledPostHeader>
-                            <StyledFolder>
-                              <IconZap />
-                            </StyledFolder>
+                            <StyledFolder></StyledFolder>
                           </StyledPostHeader>
                           <StyledPostName>{title}</StyledPostName>
                           <StyledPostDescription>{description}</StyledPostDescription>

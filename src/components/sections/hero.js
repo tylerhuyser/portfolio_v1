@@ -12,7 +12,7 @@ const StyledHeroSection = styled.section`
 
   h1 {
     margin: 0 0 30px 4px;
-    color: var(--green);
+    color: #f39c12;
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
@@ -36,6 +36,8 @@ const StyledHeroSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    color: #f39c12;
+    border-color: #f39c12;
   }
 `;
 
@@ -48,11 +50,11 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
+  const two = <h2 className="big-heading">Tyler Huyser.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-      I'm a software engineer based in Boston, MA specializing in building (and occasionally
+      I'm a software engineer based in New York, NY specializing in building (and occasionally
       designing) exceptional websites, applications, and everything in between.
     </p>
   );

@@ -1,15 +1,15 @@
 ---
 date: '1'
-title: 'Halcyon Theme'
+title: 'Awoken'
 cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+github: 'https://github.com/tylerhuyser/A-Woke-N'
+external: 'https://brave-neumann-a7bc83.netlify.app/'
 tech:
+  - Ruby
+  - Rails
+  - React
   - VS Code
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - npm
 showInProjects: true
 ---
 

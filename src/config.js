@@ -1,37 +1,37 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'tyler.huyser@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/tylerhuyser',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/tylerhuijser/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/GameSet_Blog',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://www.linkedin.com/in/tylerhuyser/',
     },
   ],
 
   navLinks: [
     {
-      name: 'About',
-      url: '/#about',
+      name: 'Bio',
+      url: '/#bio',
     },
     {
       name: 'Experience',
       url: '/#jobs',
+    },
+    {
+      name: 'Skills',
+      url: '/#skills',
     },
     {
       name: 'Work',
@@ -44,7 +44,7 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
+    orange: '#F39C12',
     navy: '#0a192f',
     darkNavy: '#020c1b',
   },

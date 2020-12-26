@@ -33,6 +33,8 @@
     ]
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
+    "@fullpage/react-fullpage": "^0.1.18",
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.7",

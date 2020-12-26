@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
+    --orange: #F39C12;
+    --orange-tint: rgba(243, 156, 18, 0.1);
 
     --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -72,7 +74,9 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: var(--navy);
+    
+    background-image: linear-gradient(rgba(2, 12, 27, 0.9),rgba(2, 12, 27, 0.9)), url('https://s7d5.scene7.com/is/image/Anthropologie/39763966_049_b3?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=683');
+    
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);
@@ -192,7 +196,7 @@ const GlobalStyle = createGlobalStyle`
       counter-increment: section;
       content: '0' counter(section) '.';
       margin-right: 10px;
-      color: var(--green);
+      color: var(--orange);
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
       font-weight: 400;
@@ -260,7 +264,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:hover,
     &:focus {
-      color: var(--green);
+      color: var(--orange);
     }
 
     &.inline-link {
@@ -324,14 +328,14 @@ const GlobalStyle = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--green);
+          color: var(--orange);
         }
       }
     }
   }
 
   blockquote {
-    border-left-color: var(--green);
+    border-left-color: var(--orange);
     border-left-style: solid;
     border-left-width: 1px;
     margin-left: 0px;
@@ -360,18 +364,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #logo {
-    color: var(--green);
+    color: var(--orange);
   }
 
   .overline {
-    color: var(--green);
+    color: var(--orange);
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
   }
 
   .subtitle {
-    color: var(--green);
+    color: var(--orange);
     margin: 0 0 20px 0;
     font-size: var(--fz-md);
     font-family: var(--font-mono);
@@ -394,7 +398,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    color: var(--green);
+    color: var(--orange);
 
     .arrow {
       display: block;

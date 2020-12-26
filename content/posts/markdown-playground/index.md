@@ -96,8 +96,8 @@ This is a paragraph.
 @import 'compass/reset';
 
 // variables
-$colorGreen: #008000;
-$colorGreenDark: darken($colorGreen, 10);
+$colorgreen: #008000;
+$colorgreenDark: darken($colorgreen, 10);
 
 @mixin container {
   max-width: 980px;
@@ -151,9 +151,9 @@ ul {
 }
 
 a {
-  color: $colorGreen;
+  color: $colorgreen;
   &:hover {
-    color: $colorGreenDark;
+    color: $colorgreenDark;
   }
   &:visited {
     color: #c458cb;
@@ -257,28 +257,28 @@ you can write text [with links](http://example.com) inline or [link references][
     >     Markdown.generate();
 
 - Red
-- Green
+- green
 - Blue
 
 * Red
-* Green
+* green
 * Blue
 
 - Red
-- Green
+- green
 - Blue
 
 ```markdown
 - Red
-- Green
+- green
 - Blue
 
 * Red
-* Green
+* green
 * Blue
 
 - Red
-- Green
+- green
 - Blue
 ```
 
