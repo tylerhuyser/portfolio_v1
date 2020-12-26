@@ -1,7 +1,7 @@
 ---
-date: '1'
-title: 'Awoken'
-cover: './halcyon.png'
+date: '4'
+title: 'AWOKEN'
+cover: './awoken.png'
 github: 'https://github.com/tylerhuyser/A-Woke-N'
 external: 'https://brave-neumann-a7bc83.netlify.app/'
 tech:
@@ -13,4 +13,4 @@ tech:
 showInProjects: true
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+AWOKEN is a React-on-Rails app that helps awaken users to bias. The app uses a variety of surveys in order to measure a user's biases (i.e. racism, sexism, etc.). The app also deploys an intervention that helps guide users to a more awoken mindset.

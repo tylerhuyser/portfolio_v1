@@ -151,16 +151,17 @@ const About = () => {
             </p>
 
             <p>
-              Currently, by day, I search for C-suite executives for entrepreneurial biotech,
-              pharma, and the life sciences companies. By night, I work on a variety of creative &
-              entrepreneurial endeavors. In 2019, I founded{' '}
-              <a href="https://www.walkinmyshoesmedia.com/">Walk In My Shoes Media</a>, a diversity
-              & inclusion training company.
+              By day, I search for C-suite executives for entrepreneurial biotech, pharma, and the
+              life sciences companies. By night, I work on a variety of creative & entrepreneurial
+              endeavors.
             </p>
 
             <p>
               I hold a bachelor's degree in film studies from{' '}
               <a href="https://www.columbia.edu/">Columbia University</a>
+              In 2019, I founded{' '}
+              <a href="https://www.walkinmyshoesmedia.com/">Walk In My Shoes Media</a>, a diversity
+              & inclusion training company.
             </p>
           </div>
         </StyledText>
