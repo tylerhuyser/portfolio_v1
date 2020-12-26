@@ -20,28 +20,39 @@ const StyledSkillsSection = styled.section`
 `;
 
 const SliderWrapper = styled.div`
-  .skill-icon {
+  .skill-icon-container {
+    margin: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     i {
-      margin: 1.9em 0 0.4em 18%;
-      width: 64%;
+      font-size: 50px;
+      color: var(--orange);
     }
     p {
-      margin: 0 0 1.2em 0;
+      margin-top: 1vh;
       font-size: 0.9em;
       text-align: center;
+      color: var(--orange);
+      white-space: nowrap;
     }
   }
   .BrainhubCarousel__arrows {
-    border: 3px solid blue;
+    border: 1px solid var(--orange);
     border-radius: 50%;
     background: rgba(0, 0, 0, 0);
     span {
-      border-color: blue;
+      border-color: var(--orange);
     }
     &:hover {
-      background: blue;
+      border: 1px solid var(--light-slate);
+      background: var(--orange);
       span {
-        border-color: white;
+        border-color: var(--light-slate);
+      }
+      &:enabled {
+        background: var(--orange);
       }
     }
   }
@@ -49,7 +60,7 @@ const SliderWrapper = styled.div`
     margin: 0 2.1em;
     padding: 0 1.3em;
     border-radius: 4px;
-    background: white;
+    background: var(--light-slate);
     background-image: var(--navy) no-repeat center center fixed;
     background-size: cover;
     box-shadow: inset 0px 0px 0.5rem 0px rgba(0, 0, 0, 0.22);
@@ -57,7 +68,7 @@ const SliderWrapper = styled.div`
 `;
 
 const Skills = () => {
-  const [skillsDisplayed, setSkillsDisplayed] = useState(2);
+  const [skillsDisplayed, setSkillsDisplayed] = useState(0.5);
 
   const revealContainer = useRef(null);
   useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
@@ -65,13 +76,13 @@ const Skills = () => {
   const handleResize = () => {
     const width = window.innerWidth;
     if (width > 850) {
-      setSkillsDisplayed(8);
-    } else if (width > 640) {
       setSkillsDisplayed(6);
-    } else if (width > 540) {
+    } else if (width > 640) {
       setSkillsDisplayed(5);
-    } else {
+    } else if (width > 540) {
       setSkillsDisplayed(4);
+    } else {
+      setSkillsDisplayed(3);
     }
   };
 
@@ -91,72 +102,72 @@ const Skills = () => {
             arrows={skillsDisplayed > 4}
             autoPlay={2700}
             infinite>
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-nodejs-plain skill-icon"></i>
               <p>Node JS</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-html5-plain skill-icon"></i>
               <p>HTML5</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-javascript-plain skill-icon"></i>
               <p>Javascript</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-react-original skill-icon"></i>
               <p>ReactJS</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-redux-original skill-icon"></i>
               <p>Redux</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-css3-plain skill-icon"></i>
               <p>CSS3</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-git-plain skill-icon"></i>
               <p>Git</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-ruby-plain skill-icon"></i>
               <p>Ruby</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-rails-plain skill-icon"></i>
               <p>Rails</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-mongodb-plain skill-icon"></i>
               <p>MongoDB</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-express-original skill-icon"></i>
               <p>Express</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-postgresql-plain skill-icon"></i>
               <p>PostgreSQL</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-heroku-original skill-icon"></i>
               <p>Heroku</p>
             </div>
 
-            <div className="skill-icon">
+            <div className="skill-icon-container">
               <i className="devicon-photoshop-plain skill-icon"></i>
               <p>Photoshop</p>
             </div>
