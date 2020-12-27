@@ -33,6 +33,8 @@ Here are some of the languages and technologies that I have experience with:
 
 ### AWOKEN
 
+<img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/Awoken/awoken.png?raw=true" width="60%">
+
 [AWOKEN](https://github.com/tylerhuyser/A-Woke-N) is a React-on-Rails app that helps awaken users to bias. The app uses a variety of surveys in order to measure a user's biases (i.e. racism, sexism, etc.). The app also deploys an intervention that helps guide users to a more awoken mindset.
 
 - Ruby
@@ -43,6 +45,8 @@ Here are some of the languages and technologies that I have experience with:
 [Deployed Site](https://brave-neumann-a7bc83.netlify.app/) can be accessed here.
 
 ### Twinkle Toes
+
+<img src="" width="60%">
 
 [Twinkle Toes](https://github.com/tylerhuyser/twinkle-toes/tree/master) is an e-commerce store that specializes in everyone's favorite accessory: sparkley shoes.The application allows customers to browse and leave reviews on products. Furthermore, the application gives admins full-CRUD functionality (i.e. the ability to create, read, update, and delete products from the backend).
 
@@ -56,6 +60,8 @@ Here are some of the languages and technologies that I have experience with:
 
 ### profesh
 
+<img src="" width="60%">
+
 [profesh](https://github.com/tylerhuyser/profesh) is an app that assists job seekers throughout their job hunt. The app provides a directory of job listings and a series of tools that enable the user to track their journey with each individual opportunity, from interview to offer.
 
 - React
@@ -65,6 +71,8 @@ Here are some of the languages and technologies that I have experience with:
 [Deployed Site](https://dazzling-bartik-4a9043.netlify.app/) can be accessed here.
 
 ### CAN YOU EAT IT?
+
+<img src="" width="60%">
 
 [CAN YOU EAT IT?](https://github.com/tylerhuyser/CanYouEatItFungusIdentificationApp) helps amateur foraging hobbyists find more information about their discoveries by connecting user-input location, season, and observation information with API data.
 
