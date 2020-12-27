@@ -46,7 +46,7 @@ Here are some of the languages and technologies that I have experience with:
 
 ### Twinkle Toes
 
-<img src="" width="60%">
+<img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/TwinkleToes/twinkle-toes.png?raw=true" width="60%">
 
 [Twinkle Toes](https://github.com/tylerhuyser/twinkle-toes/tree/master) is an e-commerce store that specializes in everyone's favorite accessory: sparkley shoes.The application allows customers to browse and leave reviews on products. Furthermore, the application gives admins full-CRUD functionality (i.e. the ability to create, read, update, and delete products from the backend).
 
@@ -60,7 +60,7 @@ Here are some of the languages and technologies that I have experience with:
 
 ### profesh
 
-<img src="" width="60%">
+<img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/profesh/profesh.png?raw=true" width="60%">
 
 [profesh](https://github.com/tylerhuyser/profesh) is an app that assists job seekers throughout their job hunt. The app provides a directory of job listings and a series of tools that enable the user to track their journey with each individual opportunity, from interview to offer.
 
@@ -72,7 +72,7 @@ Here are some of the languages and technologies that I have experience with:
 
 ### CAN YOU EAT IT?
 
-<img src="" width="60%">
+<img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/CanYouEatIt/can-you-eat-it.png?raw=true" width="60%">
 
 [CAN YOU EAT IT?](https://github.com/tylerhuyser/CanYouEatItFungusIdentificationApp) helps amateur foraging hobbyists find more information about their discoveries by connecting user-input location, season, and observation information with API data.
 
