@@ -31,6 +31,19 @@ Here are some of the languages and technologies that I have experience with:
 
 ## Some things I've built
 
+### ORDERx
+
+<img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/ORDERx/ORDERx.png?raw=true" width="60%">
+
+ORDERx is a React-on-Rails application that helps doctors and patients create, edit, and manage their medications. Furthermore, users are able to search their pending orders by doctor/patient name, address, date, or medication.
+
+- React
+- Ruby
+- Rails
+- Heroku
+
+[Deployed Site](https://confident-keller-484552.netlify.app/) can be accessed here.
+
 ### AWOKEN
 
 <img src="https://github.com/tylerhuyser/portfolio_v1/blob/main/content/featured/Awoken/awoken.png?raw=true" width="60%">
