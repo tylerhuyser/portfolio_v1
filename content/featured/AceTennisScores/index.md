@@ -1,6 +1,6 @@
 ---
 date: '6'
-title: 'ACE TENNNIS SCORES'
+title: 'ACE TENNIS SCORES'
 cover: './ace-tennis-scores.png'
 github: 'https://github.com/tylerhuyser/ACE-tennis-scores'
 external: 'https://www.ace-tennis-scores.com/'
