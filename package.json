@@ -17,12 +17,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "clean": "gatsby clean",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -33,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "@brainhubeu/react-carousel": "^2.0.4",
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@fullpage/react-fullpage": "^0.1.18",
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^2.1.4",
@@ -74,7 +70,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "gatsby-remark-code-titles": "^1.1.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3"
   }
