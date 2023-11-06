@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
@@ -232,6 +232,7 @@ const StyledProject = styled.div`
     }
 
     .img {
+      max-width: 700px;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
@@ -251,7 +252,7 @@ const Featured = () => {
     query {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: {date: DESC }}
       ) {
         edges {
           node {
@@ -259,9 +260,12 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
-                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                  }
+                  gatsbyImageData(
+                    layout: FULL_WIDTH
+                    tracedSVGOptions: {
+                      color: "#64ffda"
+                    }
+                  )
                 }
               }
               tech
@@ -274,6 +278,14 @@ const Featured = () => {
       }
     }
   `);
+
+  // {
+  //   childImageSharp {
+  //     fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
+  //       ...GatsbyImageSharpFluid_withWebp_tracedSVG
+  //     }
+  //   }
+  // }
 
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
 
@@ -327,7 +339,7 @@ const Featured = () => {
 
                 <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} className="img" />
+                    <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} className="img" />
                   </a>
                 </div>
               </StyledProject>
