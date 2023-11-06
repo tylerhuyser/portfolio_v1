@@ -252,7 +252,7 @@ const Featured = () => {
     query {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { frontmatter: {date: DESC }}
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -278,14 +278,6 @@ const Featured = () => {
       }
     }
   `);
-
-  // {
-  //   childImageSharp {
-  //     fluid(maxWidth: 700, traceSVG: { color: "#64ffda" }) {
-  //       ...GatsbyImageSharpFluid_withWebp_tracedSVG
-  //     }
-  //   }
-  // }
 
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
 
