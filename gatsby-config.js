@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -38,7 +39,6 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -51,13 +51,6 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/content/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
       },
     },
     {
