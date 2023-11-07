@@ -35,6 +35,7 @@
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.12.9",
     "gatsby-plugin-google-gtag": "^5.12.3",
+    "gatsby-plugin-google-tagmanager": "^5.12.3",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-netlify": "^5.1.1",

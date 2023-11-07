@@ -19,12 +19,9 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingIds: ['GTM-T95FWVWP'],
-        pluginConfig: {
-          head: true,
-        },
+        id: "GTM-T95FWVWP",
       },
     },
     {
