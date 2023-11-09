@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Tyler Huyser Portfolio',
+    title: 'Tyler Huyser',
     description:
       'Tyler Huyser is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
     siteUrl: 'https://tylerhuyser.com', // No trailing slash allowed!
