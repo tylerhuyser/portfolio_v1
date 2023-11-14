@@ -19,6 +19,14 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-offline`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.tylerhuyser.com',
+        sitemap: 'https://www.tylerhuyser.com/sitemap-0.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-T95FWVWP",
