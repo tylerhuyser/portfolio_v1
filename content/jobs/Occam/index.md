@@ -3,7 +3,7 @@ date: '2020-10-27'
 title: 'Junior Associate'
 company: 'Occam Global'
 location: 'New York, NY'
-range: 'October 2020 - Present'
+range: 'October 2020 - June 2023'
 url: 'https://www.occam-global.com'
 ---
 
