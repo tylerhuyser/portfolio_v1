@@ -317,12 +317,12 @@ const Featured = () => {
 
                   <div className="project-links">
                     {github && (
-                      <a href={github} aria-label="GitHub Link">
+                      <a href={github} target="_blank" aria-label="GitHub Link">
                         <Icon name="GitHub" />
                       </a>
                     )}
                     {external && (
-                      <a href={external} aria-label="External Link" className="external">
+                      <a href={external} target="_blank" aria-label="External Link" className="external">
                         <Icon name="External" />
                       </a>
                     )}
