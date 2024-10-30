@@ -54,8 +54,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <p>
-      I'm a software engineer based in New York, NY specializing in building (and occasionally
-      designing) exceptional websites, applications, and everything in between.
+     I am an enthusiastic and adaptable web developer based in New York City. Transitioning from a career in biotechnology Executive Recruitment, I hope to leverage my skills in coding, project management, and client engagement to build effective digital applications. 
     </p>
   );
   const five = (
