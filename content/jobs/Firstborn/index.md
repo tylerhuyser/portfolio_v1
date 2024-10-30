@@ -1,6 +1,6 @@
 ---
 date: '2017-02-28'
-title: 'Business Development Resident'
+title: 'Business Development'
 company: 'Firstborn'
 location: 'New York, NY'
 range: 'February - September 2017'

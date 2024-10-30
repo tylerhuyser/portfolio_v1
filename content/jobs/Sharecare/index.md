@@ -1,6 +1,6 @@
 ---
 date: '2016-06-14'
-title: 'Assistant Project Lead'
+title: 'Population Health Programs'
 company: 'Sharecare'
 location: 'Atlanta, GA'
 range: 'June 2016 - Feb 2017'
