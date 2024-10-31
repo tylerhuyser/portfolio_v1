@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '4'
 title: 'ACE TENNIS SCORES'
 cover: './ace-tennis-scores.png'
 github: 'https://github.com/tylerhuyser/ACE-tennis-scores'
@@ -9,7 +9,6 @@ tech:
   - Rails
   - React
   - Heroku
-  - Web Scraper
 showInProjects: true
 ---
 

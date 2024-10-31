@@ -32,9 +32,12 @@ module.exports = {
     {
       name: 'Skills',
       url: '/#skills',
+    },    {
+      name: 'Featured Work',
+      url: '/#featured',
     },
     {
-      name: 'Work',
+      name: 'Additional Projects',
       url: '/#projects',
     },
     {

@@ -7,106 +7,114 @@ import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 
 const StyledProject = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
 
-  &:not(:last-of-type) {
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  width: calc((100% - 100px) / 3);
+  gap: 50px;
+  margin-bottom: 50px;
 
-    @media (max-width: 768px) {
-      margin-bottom: 70px;
-    }
-
-    @media (max-width: 480px) {
-      margin-bottom: 30px;
-    }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: calc((100% - 50px) / 2);
+    margin-bottom: 50px;
   }
 
-  &:nth-of-type(odd) {
-    .project-content {
-      grid-column: 7 / -1;
-      text-align: right;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
-      @media (max-width: 1080px) {
-        grid-column: 5 / -1;
-      }
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-        padding: 40px 40px 30px;
-      }
-      @media (max-width: 480px) {
-        padding: 25px 25px 20px;
-      }
+  @media (max-width: 480px) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: 1024px) {
+
+    &:last-of-type {
+      margin-right: auto;
     }
-    .project-tech-list {
-      justify-content: flex-end;
+
+  }
+
+  .project-tech-list {
+
+    justify-content: flex-start;
 
       li {
-        margin: 0 0 5px 20px;
 
         @media (max-width: 768px) {
-          margin: 0 0 5px 10px;
+
         }
+
       }
+
     }
-    .project-links {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -10px;
+
+  .project-links {
+
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0px;
+
+    a {
+
+      justify-content: flex-start;
+      padding-left: 0px;
+
+      }
+
     }
+
     .project-image {
-      grid-column: 1 / 8;
 
       @media (max-width: 768px) {
-        grid-column: 1 / -1;
+
       }
+
     }
+
   }
 
   .project-content {
-    position: relative;
-    grid-column: 1 / 7;
-    grid-row: 1 / -1;
 
     @media (max-width: 1080px) {
-      grid-column: 1 / 9;
+
     }
 
     @media (max-width: 768px) {
-      grid-column: 1 / -1;
+
       padding: 40px 40px 30px;
-      z-index: 5;
+
     }
 
     @media (max-width: 480px) {
+
       padding: 30px 25px 20px;
+
     }
   }
 
-  .project-overline {
-    margin: 10px 0;
-    color: var(--orange);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    font-weight: 400;
-  }
-
   .project-title {
+
+    height: 50px;
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
 
     @media (min-width: 768px) {
+
       margin: 0 0 20px;
+
     }
 
     @media (max-width: 768px) {
+
       color: var(--white);
+
     }
+
   }
 
   .project-description {
+
     ${({ theme }) => theme.mixins.boxShadow};
     position: relative;
     z-index: 2;
@@ -117,21 +125,28 @@ const StyledProject = styled.div`
     font-size: var(--fz-lg);
 
     @media (max-width: 768px) {
+
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
 
       &:hover {
+
         box-shadow: none;
+
       }
     }
 
     a {
+
       ${({ theme }) => theme.mixins.inlineLink};
+
     }
+
   }
 
   .project-tech-list {
+
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -141,24 +156,30 @@ const StyledProject = styled.div`
     list-style: none;
 
     li {
+
       margin: 0 20px 5px 0;
       color: var(--light-slate);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       white-space: nowrap;
+
     }
 
     @media (max-width: 768px) {
+
       margin: 10px 0;
 
       li {
         margin: 0 10px 5px 0;
         color: var(--lightest-slate);
       }
+
     }
+
   }
 
   .project-links {
+
     display: flex;
     align-items: center;
     position: relative;
@@ -167,6 +188,7 @@ const StyledProject = styled.div`
     color: var(--lightest-slate);
 
     a {
+
       ${({ theme }) => theme.mixins.flexCenter};
       padding: 10px;
 
@@ -182,23 +204,25 @@ const StyledProject = styled.div`
         width: 20px;
         height: 20px;
       }
+
     }
+
   }
 
   .project-image {
+
     ${({ theme }) => theme.mixins.boxShadow};
-    grid-column: 6 / -1;
-    grid-row: 1 / -1;
     position: relative;
+    width: 100%:
+    height: auto;
     z-index: 1;
 
     @media (max-width: 768px) {
-      grid-column: 1 / -1;
-      height: 100%;
-      opacity: 0.4;
+      opacity: 0.6;
     }
 
     a {
+
       width: 100%;
       background-color: var(--orange);
       border-radius: var(--border-radius);
@@ -247,11 +271,11 @@ const StyledProject = styled.div`
   }
 `;
 
-const Featured = () => {
+const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/featured/" } }
+      projects: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/projects/" } }
         sort: { frontmatter: { date: DESC } }
       ) {
         edges {
@@ -279,7 +303,7 @@ const Featured = () => {
     }
   `);
 
-  const featuredProjects = data.featured.edges.filter(({ node }) => node);
+  const projects = data.projects.edges.filter(({ node }) => node);
 
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
@@ -289,22 +313,39 @@ const Featured = () => {
   }, []);
 
   return (
-    <section id="featured">
+    <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Featured Projects
+        Additional Projects
       </h2>
 
-      <div>
-        {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
+      <div className="projects-container" style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        gap: '50px'
+      }} >
+        {projects &&
+          projects.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+
                 <div className="project-content">
-                  <p className="project-overline">Featured Project</p>
+
                   <h3 className="project-title">{title}</h3>
+
+                  <div className="project-image">
+                    <a href={external ? external : github ? github : '#'}>
+                      <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} className="img" />
+                    </a>
+                  </div>
+
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
 
                   {tech.length && (
@@ -328,12 +369,6 @@ const Featured = () => {
                     )}
                   </div>
                 </div>
-
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={cover.childImageSharp.gatsbyImageData} alt={title} className="img" />
-                  </a>
-                </div>
               </StyledProject>
             );
           })}
@@ -342,4 +377,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Projects;

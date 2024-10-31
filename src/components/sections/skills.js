@@ -61,7 +61,7 @@ const SliderWrapper = styled.div`
     margin: 0 2.1em;
     padding: 0 1.3em;
     border-radius: 4px;
-    background: rgb(255, 250, 250, 0.7);
+    background: rgb(255, 250, 250, 0.25);
     background-image: var(--navy) no-repeat center center fixed;
     background-size: cover;
     box-shadow: inset 0px 0px 0.5rem 0px rgba(0, 0, 0, 0.22);

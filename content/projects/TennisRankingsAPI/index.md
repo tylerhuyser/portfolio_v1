@@ -1,5 +1,5 @@
 ---
-date: '8'
+date: '2'
 title: 'TENNIS RANKINGS API'
 cover: './tennis-rankings-api.png'
 github: 'https://github.com/tylerhuyser/ACE-tennis-scores/blob/main/client/src/serverless-functions/getRankings-Octoparse-to-Heroku.js'
@@ -8,8 +8,8 @@ tech:
   - Javascript
   - Ruby
   - Rails
-  - Web Scraper
   - Heroku
+  - Web Scraping
 showInProjects: true
 ---
 

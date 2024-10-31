@@ -146,26 +146,25 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Tyler, a software engineer based in New York, NY.</p>
-
             <p>
-              I enjoy creating things that live on the internet, whether that be websites,
-              applications, or anything in between. My goal is to always build products that provide
-              pixel-perfect, performant experiences.
+              Hello! I'm Tyler, an enthusiastic and adaptable junior software engineer based in New York, NY.
             </p>
 
             <p>
-              By day, I search for C-suite executives for entrepreneurial biotech, pharma, and the
-              life sciences companies. By night, I work on a variety of creative & entrepreneurial
-              endeavors.
+              Passionate about using technology to creatively solve problems, I bring expertise in full-stack software development and technologies, including Vanilla Javascript, React, Ruby on Rails, and Node.js.
+            </p>
+              
+            <p>
+              I am currently in the midst of a career transition, having previously worked as an executive search consultant in the arenas of biotechnology, technology, private equity, and venture captial.
             </p>
 
             <p>
-              I hold a bachelor's degree in film studies from{' '}
-              <a href="https://www.columbia.edu/">Columbia University</a>
-              In 2019, I founded{' '}
-              <a href="https://www.walkinmyshoesmedia.com/">Walk In My Shoes Media</a>, a diversity
-              & inclusion training company.
+              Blending analytical expertise from coding with strategic, relationship-building skills from my recruiting background, I aim to create impactful and transformative digital applications.
+            </p>
+
+            <p>
+              I hold a bachelor's degree in film studies from{' '}<a href="https://www.columbia.edu/">Columbia University</a>.
+              In 2019, I founded{' '}<a href="https://www.walkinmyshoesmedia.com/">Walk In My Shoes Media</a>, a diversity & inclusion training company.
             </p>
           </div>
         </StyledText>
