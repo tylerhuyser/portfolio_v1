@@ -1,5 +1,5 @@
 ---
-date: '7'
+date: '1'
 title: 'country-code-converter'
 cover: './country-code-converter.png'
 github: 'https://github.com/tylerhuyser/country-code-converter'
