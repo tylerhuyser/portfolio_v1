@@ -1,6 +1,6 @@
 ---
 date: '5'
-title: 'GAME SET BLOG'
+title: 'Game, Set, Blog'
 cover: './game-set-blog.png'
 github: 'https://github.com/tylerhuyser/game-set-blog'
 external: 'https://www.gamesetblog.com/'
