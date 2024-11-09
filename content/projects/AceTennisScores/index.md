@@ -3,7 +3,6 @@ date: '4'
 title: 'ACE Tennis Scores'
 cover: './ace-tennis-scores.png'
 github: 'https://github.com/tylerhuyser/ACE-tennis-scores'
-external: 'https://www.ace-tennis-scores.com/'
 tech:
   - Ruby
   - Rails
