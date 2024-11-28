@@ -1,5 +1,5 @@
 ---
-date: '6'
+date: '7'
 title: 'Influencer Marketing Portfolio Site'
 cover: './influencer-marketing-portfolio.png'
 github: 'https://github.com/tylerhuyser/influencer-marketing-portfolio-gatsby'
