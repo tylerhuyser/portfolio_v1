@@ -92,20 +92,20 @@ const Layout = ({ children, location }) => {
 
           <SkipToContentLink href="#content">Skip to Content</SkipToContentLink>
 
-          {isLoading && isHome ? (
-            <Loader finishLoading={() => setIsLoading(false)} />
-          ) : (
-            <StyledContent>
-              <Nav isHome={isHome} />
-              <Social isHome={isHome} />
-              <Email isHome={isHome} />
+          <StyledContent className={isLoading ? 'loading' : ''}>
 
-              <div id="content">
-                {children}
-                <Footer />
-              </div>
-            </StyledContent>
-          )}
+            <Nav isHome={isHome} />
+            <Social isHome={isHome} />
+            <Email isHome={isHome} />
+
+            <div id="content">
+              {children}
+              <Footer />
+            </div>
+          </StyledContent>
+
+          {isHome && <Loader isLoading={isLoading} finishLoading={() => setIsLoading(false)} />}
+
         </ThemeProvider>
       </div>
     </>

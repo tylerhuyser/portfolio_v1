@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
@@ -8,14 +7,19 @@ import { IconLoader } from '@components/icons';
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: var(--dark-navy);
-  z-index: 99;
+  z-index: 9999;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 
   .logo-wrapper {
     width: max-content;
@@ -36,7 +40,7 @@ const StyledLoader = styled.div`
   }
 `;
 
-const Loader = ({ finishLoading }) => {
+const Loader = ({ isLoading, finishLoading }) => {
   const animate = () => {
     const loader = anime.timeline({
       complete: () => finishLoading(),
@@ -63,13 +67,6 @@ const Loader = ({ finishLoading }) => {
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,
-      })
-      .add({
-        targets: '.loader',
-        duration: 200,
-        easing: 'easeInOutQuart',
-        opacity: 0,
-        zIndex: -1,
       });
   };
 
@@ -82,9 +79,10 @@ const Loader = ({ finishLoading }) => {
   }, []);
 
   return (
-    <StyledLoader className="loader" isMounted={isMounted}>
-      <Helmet bodyAttributes={{ class: `hidden` }} />
-
+    <StyledLoader
+      className={`loader ${isLoading ? '' : 'hidden'}`}
+      isMounted={isMounted}
+    >
       <div className="logo-wrapper">
         <IconLoader />
       </div>
@@ -93,6 +91,7 @@ const Loader = ({ finishLoading }) => {
 };
 
 Loader.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
   finishLoading: PropTypes.func.isRequired,
 };
 
