@@ -3,7 +3,7 @@ date: '8'
 title: 'AWOKENVR'
 cover: './awokenvr.png'
 github: 'https://github.com/tylerhuyser/wims-redesign-2024'
-external: 'https://awokenvr.netlify.app'
+external: 'https://awokenvr.com'
 tech:
   - Next.js
   - Typescript
