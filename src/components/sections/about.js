@@ -164,7 +164,7 @@ const About = () => {
 
             <p>
               I hold a bachelor's degree in film studies from{' '}<a href="https://www.columbia.edu/">Columbia University</a>.
-              In 2019, I founded{' '}<a href="https://www.walkinmyshoesmedia.com/">Walk In My Shoes Media</a>, a diversity & inclusion training company.
+              In 2019, I founded{' '}<a href="https://awokenvr.com/">AWOKENVR</a>, a diversity & inclusion training company.
             </p>
           </div>
         </StyledText>
